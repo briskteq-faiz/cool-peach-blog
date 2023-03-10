@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.link {
+  font-size: 1.2em;
+  color: #333;
+  text-decoration: none;
+  background-color: #e7d7e4;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
+
+.navbar {
+  display: flex;
+  width: 40%;
+  height: 10vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  background-color: #0e0831;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
