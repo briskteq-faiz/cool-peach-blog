@@ -10,6 +10,9 @@ const Layout = ({ pageTitle, children }) => {
           <Link to="/" className={styles.link}>
             Home
           </Link>
+          <Link to="/blog" className={styles.link}>
+            Blog
+          </Link>
           <Link to="/about" className={styles.link}>
             About
           </Link>

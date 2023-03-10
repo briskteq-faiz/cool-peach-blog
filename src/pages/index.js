@@ -1,22 +1,21 @@
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import * as React from "react";
 import Layout from "../components/Layout";
+import * as styles from "./index.module.css";
 
-const IndexPage = ({ data }) => {
-  console.log(data);
-  return (
-    <Layout pageTitle="Home">
-      <p>Blog List</p>
-      {data.allBlogJson.nodes.map((node) => <p>{node.title}</p>)}
-    </Layout>
-  );
+const IndexPage = ({ file, data }) => {
+  return <Layout pageTitle="Home">Welcome! to MEdiu</Layout>;
 };
 
 export const query = graphql`
-  query {
+  query MyQuery {
+    allFile {
+      nodes {
+        name
+      }
+    }
     allBlogJson {
       nodes {
-        id
         title
       }
     }
